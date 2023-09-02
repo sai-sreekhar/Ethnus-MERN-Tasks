@@ -7,12 +7,25 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 20px;
-            background-color: lightcyan;
+            margin: 0;
+            padding: 0;
+            background-color: lightyellow;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            background-color: skyblue;
+            color: black;
+            text-align: center;
+            padding: 20px 0;
         }
         h1 {
-            text-align: center;
-            color: darkblue;
+            font-size: 32px;
+        }
+        h2 {
+            color: black;
+            font-size: 24px;
         }
         ul {
             list-style-type: none;
@@ -23,38 +36,54 @@
         }
         a {
             text-decoration: none;
-            color: #007bff;
+            color: blue;
         }
         a:hover {
             text-decoration: underline;
         }
         footer {
             text-align: center;
-            margin-top: 20px;
+            background-color: cyan;
+            color: black;
+            padding: 20px 0;
+            margin-top: auto; /* Push the footer to the bottom of the page. */
+        }
+        .content {
+            background-color: lightyellow;
+            padding: 20px;
         }
     </style>
 </head>
 <body>
-    <h1>MERN Tasks</h1>
-    <h2>HTML Tasks:</h2>
-    <ul>
-        <li><a href="./HTML-Tasks/task1.html">Task 1: HTML Table</a></li>
-        <li><a href="./HTML-Tasks/task2.html">Task 2: HTML List</a></li>
-        <li><a href="./HTML-Tasks/task3.html">Task 3: HTML Hyperlink</a></li>
-        <li><a href="./HTML-Tasks/task4_5.html">Task 4 and 5: Registration Form</a></li>
-    </ul>
-    <h2>CSS Tasks:</h2>
-    <ul>
-        <li><a href="./CSS-Tasks/cssTask1.html">Task 1: CSS Rounded Corners</a></li>
-        <li><a href="./CSS-Tasks/cssTask2.html">Task 2: Horizontal and Vertical Navbar</a></li>
-        <li><a href="./CSS-Tasks/cssTask3.html">Task 3: CSS Styling for Table</a></li>
-        <li><a href="./CSS-Tasks/cssTask4.html">Task 4: Hoverable Side Navbar</a></li>
-        <li><a href="./CSS-Tasks/cssTask5.html">Task 5: Styled Page</a></li>
-        <li><a href="./CSS-Tasks/cssTask6.html">Task 6: Login Page</a></li>
-        <li><a href="./CSS-Tasks/cssTask7.html">Task 7: Signup Page</a></li>
-    </ul>
+    <header>
+        <h1>MERN Tasks</h1>
+    </header>
+    <main class="content">
+        <section>
+            <h2>HTML Tasks:</h2>
+            <ul>
+                <li><a href="./HTML-Tasks/task1.html">Task 1: HTML Table</a></li>
+                <li><a href="./HTML-Tasks/task2.html">Task 2: HTML List</a></li>
+                <li><a href="./HTML-Tasks/task3.html">Task 3: HTML Hyperlink</a></li>
+                <li><a href="./HTML-Tasks/task4_5.html">Task 4 and 5: Registration Form</a></li>
+            </ul>
+        </section>
+        <section>
+            <h2>CSS Tasks:</h2>
+            <ul>
+                <li><a href="./CSS-Tasks/cssTask1.html">Task 1: CSS Rounded Corners</a></li>
+                <li><a href="./CSS-Tasks/cssTask2.html">Task 2: Horizontal and Vertical Navbar</a></li>
+                <li><a href="./CSS-Tasks/cssTask3.html">Task 3: CSS Styling for Table</a></li>
+                <li><a href="./CSS-Tasks/cssTask4.html">Task 4: Hoverable Side Navbar</a></li>
+                <li><a href="./CSS-Tasks/cssTask5.html">Task 5: Styled Page</a></li>
+                <li><a href="./CSS-Tasks/cssTask6.html">Task 6: Login Page</a></li>
+                <li><a href="./CSS-Tasks/cssTask7.html">Task 7: Signup Page</a></li>
+            </ul>
+        </section>
+    </main>
     <footer>
         <p>Created by SaiSreekar | Registration Number: 21BDS0387</p>
     </footer>
 </body>
 </html>
+
