@@ -29,6 +29,7 @@
         display: flex;
         align-items: center;
         margin-bottom: 10px;
+        flex-wrap: wrap; /* Added flex-wrap */
       }
       .field-label {
         flex: 1;
@@ -36,19 +37,19 @@
       }
       .field-input {
         flex: 2;
+        width: 100%; /* Adjusted width for small screens */
       }
       .radio-group {
         display: flex;
         align-items: center;
         margin-bottom: 10px;
-      }
-      .radio-label {
-        margin-right: 10px;
+        flex-wrap: wrap; /* Added flex-wrap */
       }
       .checkbox-group {
         display: flex;
         align-items: center;
         margin-bottom: 10px;
+        flex-wrap: wrap; /* Added flex-wrap */
       }
       .checkbox-label {
         display: flex;
@@ -63,13 +64,7 @@
       input[type="password"],
       input[type="number"],
       input[type="tel"],
-      select {
-        width: 100%;
-        padding: 10px;
-        border: 1px solid black;
-        border-radius: 4px;
-        box-sizing: border-box;
-      }
+      select,
       input[type="date"] {
         width: 100%;
         padding: 10px;
