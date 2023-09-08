@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      max-width: 400px;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+    th, td {
+      padding: 10px;
+      text-align: left;
+    }
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+    input[type="text"], input[type="password"], select {
+      width: 100%;
+      padding: 10px;
+      margin: 5px 0;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      box-sizing: border-box; /* Ensure padding is included in the width */
+    }
+    input[type="submit"] {
+      background-color: #007bff;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+      width: 100%;
+    }
+    input[type="submit"]:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <table>
+    <tr>
+      <td>Full Name:</td>
+      <td><input type="text" name="full_name"></td>
+    </tr>
+    <tr>
+      <td>Username:</td>
+      <td><input type="text" name="username"></td>
+    </tr>
+    <tr>
+      <td>Password:</td>
+      <td><input type="password" name="password"></td>
+    </tr>
+    <tr>
+      <td>Re-enter Password:</td>
+      <td><input type="password" name="password_confirm"></td>
+    </tr>
+    <tr>
+      <td>Address:</td>
+      <td><input type="text" name="address"></td>
+    </tr>
+    <tr>
+      <td>Age:</td>
+      <td><input type="text" name="age"></td>
+    </tr>
+    <tr>
+      <td>Gender:</td>
+      <td>
+        <select name="gender" id="Gender">
+          <option value="Select" selected>Select</option>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <form>
+          <input type="submit" value="Submit">
+        </form>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
